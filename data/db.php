@@ -10,7 +10,7 @@ $movies = [
 
     [
         'title' => 'Saving private Ryan',
-        'genre' => 'War movie',
+        'genre' => '',
         'year' => '1998',
         'director' => 'Steven Spielberg',
     ],

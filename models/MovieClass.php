@@ -14,8 +14,17 @@ class Movie
         string $_director
     ) {
         $this->title = $_title;
-        $this->title = $_genre;
-        $this->title = $_year;
-        $this->title = $_director;
+        $this->defaultGenre($_genre);
+        $this->year = $_year;
+        $this->director = $_director;
+    }
+
+    public function defaultGenre($_genre)
+    {
+        if (!is_string($_genre) || $_genre === '') {
+            $this->genre = 'unknown';
+        } else {
+            $this->genre = $_genre;
+        }
     }
 }

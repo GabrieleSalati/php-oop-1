@@ -14,8 +14,6 @@ foreach ($movies as $movie) {
     );
 }
 
-var_dump($movies_object)
-
 ?>
 
 <!DOCTYPE html>
